@@ -60,7 +60,7 @@ sleep 5
 	do
 		echo ${triggerArr[$j]}
 		if [[ ${triggerArr[$j]} =~ .*${messageArr[$i]//\"/*} ]] ; then
-		curl https://api.telegram.org/bot1745907536:AAEhvVpDfFBymxlITCXaiyD3sCfcAdtJgvo/sendMessage?chat_id="${paramsArr[0]}"'&'text="${timeArr[$i]//\"/}'\n'""${sourceArr[$i]//\"/}'\n'""${messageArr[$i]//\"/}"
+		curl https://api.telegram.org/{{botToken}}/sendMessage?chat_id="${paramsArr[0]}"'&'text="${timeArr[$i]//\"/}'\n'""${sourceArr[$i]//\"/}'\n'""${messageArr[$i]//\"/}"
 		fi
 	done
 #curl https://api.telegram.org/bot1745907536:AAEhvVpDfFBymxlITCXaiyD3sCfcAdtJgvo/sendMessage?chat_id="${paramsArr[0]}"'&'text="${paramsArr[1]}"
