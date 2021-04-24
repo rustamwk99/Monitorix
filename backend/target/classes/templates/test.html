@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    <script th:inline="javascript">
+        const session = sessionStorage.setItem("q","q");
+        document.write(session);
+
+    </script>
+</p>
+<p th:text="${login}">ttt</p>
+<p>something</p>
+</body>
+</html>

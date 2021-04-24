@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Script</title>
+</head>
+<body>
+<a th:href="@{/info}">Show data</a>
+<p>
+    <script th:inline="javascript">
+        const session = sessionStorage.getItem("login");
+        document.write(session);
+
+    </script>
+</p>
+
+</body>
+</html>

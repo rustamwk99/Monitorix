@@ -1,0 +1,13 @@
+<div class="col-md-6 user-container">
+  <h2 class="text-center">Add Trigger</h2>
+  <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="trigger">Trigger:</label>
+      <input type="text" formControlName="trigger" placeholder="trigger" name="trigger" class="form-control"
+             id="trigger">
+    </div>
+    <br/>
+    <br/>
+    <button class="btn btn-success">Add</button>
+  </form>
+</div>

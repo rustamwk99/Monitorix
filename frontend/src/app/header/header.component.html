@@ -1,0 +1,32 @@
+
+  <mat-toolbar color="primary" class="header-container">
+    <div style="margin-right: auto">
+      <button mat-icon-button class="example-icon">
+        <mat-icon style="margin-top:-5px">menu</mat-icon>
+      </button>
+      <span routerLink="/">Monitorix</span>
+    </div>
+
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" (click)="toBot()">
+      <mat-icon>notifications</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" routerLink="login">
+      <mat-icon>person</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon"  routerLink="registration">
+      <mat-icon>person_add</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" routerLink="user_agent">
+      <mat-icon>get_app</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" routerLink="monitoring" *ngIf="isWindows();else linLog">
+      <mat-icon>info</mat-icon>
+    </button>
+    <ng-template #linLog>
+      <button mat-icon-button class="example-icon" routerLink="monitoringLin">
+        <mat-icon>info</mat-icon>
+      </button>
+    </ng-template>
+
+  </mat-toolbar>

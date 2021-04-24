@@ -1,0 +1,26 @@
+<p>System: {{os}}</p>
+
+<div class="row">
+  <div class="card" style="margin: 30px">
+    <h2>Download script(Windows)</h2>
+    <div>
+      <input type="button" (click)="download('Windows')" value="Download Data"/>
+      <p [hidden]="!isWindows()" style="color: chartreuse">Recommended</p>
+
+    </div>
+  </div>
+  <div class="card" style="margin: 30px">
+    <h2>Download script(Linux)</h2>
+    <div>
+      <input type="button" (click)="download('Linux')" value="Download Data"/>
+      <p [hidden]="!isLinux()" style="color: chartreuse">Recommended</p>
+    </div>
+  </div>
+  <div class="card" style="margin: 30px">
+    <h2>Download script(MacOs)</h2>
+    <div>
+      <input type="button" (click)="download('MacOs')" value="Download Data"/>
+      <p [hidden]="!isMacOs()" style="color: chartreuse">Recommended</p>
+    </div>
+  </div>
+</div>

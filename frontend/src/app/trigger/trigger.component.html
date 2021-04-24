@@ -1,0 +1,28 @@
+<div align='center'><h1>Triggers</h1></div>
+
+<div>
+  <table class="table" style="width: 80%">
+    <tr>
+      <th>ID</th>
+      <th>Trigger</th>
+
+    </tr>
+    <tr *ngFor="let trigger of triggers">
+      <td>
+        {{trigger.id}}
+      </td>
+      <td>
+        {{trigger.trigger}}
+      </td>
+      <td>
+        <button (click)="deleteTrigger(trigger.id)">Delete</button>
+      </td>
+    </tr>
+  </table>
+</div>
+<div>
+  <p>
+    <button (click)="addTrigger()"> Add Trigger</button>
+  </p>
+</div>
+<router-outlet></router-outlet>

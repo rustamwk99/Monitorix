@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Trigger</title>
+</head>
+<body>
+<table>
+    <tr th:each="data: ${trigger}">
+        <td th:text="${data.id}">Id</td>
+        <td th:text="${data.trigger}">Name</td>
+
+    </tr>
+</table>
+</body>
+</html>

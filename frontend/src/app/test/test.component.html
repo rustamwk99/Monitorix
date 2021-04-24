@@ -1,0 +1,18 @@
+<p>{{system.name}}</p>
+<p>{{system.version}}</p>
+<p>{{system.architecture}}</p>
+<p>{{system.totalSpace}}</p>
+<p>{{system.freeSpace}}</p>
+<mat-progress-bar mode="determinate" value="100"></mat-progress-bar>
+
+<label>
+  Name:
+  <input type="text" [formControl]="name">
+</label>
+
+
+<p>
+  Value: {{ name.value }}
+</p>
+
+

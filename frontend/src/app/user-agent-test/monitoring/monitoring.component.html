@@ -1,0 +1,29 @@
+<button class="triggerButton" (click)="onPress()">Set Trigger</button>
+<div class="panel panel-default">
+  <div class="panel-heading">
+  <h1 style="text-align: center">Logs</h1><br>
+  </div>
+</div>
+<div class="panel-body">
+  <table class="table table-hover table-sm" datatable [dtOptions]="dtOptions"
+         [dtTrigger]="dtTrigger" >
+    <thead class="thead-light">
+    <tr>
+      <th>Index</th>
+      <th>Entry Type</th>
+      <th>Source</th>
+      <th>Message</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let log of logs ">
+      <td>{{log.index}}</td>
+      <td>{{log.description}}</td>
+      <td>{{log.source}}</td>
+      <td>{{log.message}}</td>
+
+    </tr>
+    </tbody><br>
+
+  </table>
+</div>

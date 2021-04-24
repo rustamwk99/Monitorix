@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Settings>
+    <BotSettings>
+        <ChatId></ChatId>
+        <Triggers>
+            <Setting1>False</Setting1>
+            <Setting2>False</Setting2>
+            <Setting3>False</Setting3>
+            <Setting4>False</Setting4>
+        </Triggers>
+    </BotSettings>
+</Settings>
