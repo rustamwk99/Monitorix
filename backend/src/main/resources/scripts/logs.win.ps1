@@ -42,7 +42,7 @@ while($ct -lt $Events.Count){
         if ([regex]::Match($message,$triggers.Get($i).trigger).Success)
         {
             $params.text = $message
-            Invoke-WebRequest -Uri https://api.telegram.org/bot1745907536:AAEhvVpDfFBymxlITCXaiyD3sCfcAdtJgvo/sendMessage -Method POST -Body $params
+            Invoke-WebRequest -Uri https://api.telegram.org/{{botToken}}/sendMessage -Method POST -Body $params
             echo "works"
         }}
     $message = $Events.Get($ct).Source
